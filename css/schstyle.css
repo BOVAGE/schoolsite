@@ -68,6 +68,7 @@ ul.menu-items li a:hover {
 img.menu-icon {
 	display: none;
 	margin-top: 20px;
+	margin-right: 10px;
 }
 
 div.one-col-container:nth-child(2) {
@@ -113,7 +114,7 @@ div.one-col-container:nth-child(2) {
 a.button {
 	display: inline-block;
 	font-size: 2.0rem;
-	background-color: #66BFBF;
+	background: linear-gradient(to right, #66BFBF, #81caca);
 	color: #FCFEFE;
 	padding: 5px;
 	border-radius: 15px;
@@ -243,7 +244,7 @@ form {
 	min-width: 50%;
 	padding: 10px;
 	align-self: center;
-	background: #3385ff;
+	background: #66BFBF;
 }
 
 form h3 {
@@ -272,7 +273,7 @@ form input {
 input[type = submit] {
 	font-weight: 300;
 	color: white;
-	background-color: #001f4d;
+	background-color:  #ff3333;
 	cursor: pointer;
 }
 
@@ -286,7 +287,7 @@ input[type = submit] {
 
 footer {
 	font-size: 1.5rem;
-	background: #3385ff;
+	background: #66BFBF;
 }
 
 .col-center {
