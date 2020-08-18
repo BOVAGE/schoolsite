@@ -15,7 +15,8 @@ a {
 }
 
 .one-col-container {
-	max-width: 1000px;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
 nav {
@@ -66,6 +67,7 @@ ul.menu-items li a:hover {
 
 img.menu-icon {
 	display: none;
+	margin-top: 20px;
 }
 
 div.one-col-container:nth-child(2) {
@@ -153,7 +155,7 @@ a.button:hover {
 }
 
 .description h2 {
-	color: #66BFBF;
+	color: #ff3333;
 }
 
 .description h2:after {
@@ -311,7 +313,7 @@ span.love {
 		position: absolute;
 		display: block;
 		background-color: #EAF6F6;
-		top: 40px;
+		top: 60px;
 		left: 0;
 		width: 100%;
 		overflow: hidden;
@@ -322,6 +324,10 @@ span.love {
 		display: block;
 		background-color: transparent;
 		border-bottom: 2px solid black;
+	}
+	
+	ul.menu-items li:last-child {
+		border-bottom: none;
 	}
 	
 	ul.menu-items li a {
