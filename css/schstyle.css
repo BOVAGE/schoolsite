@@ -10,8 +10,18 @@ body {
 	font-family: sans-serif;
 }
 
+p {
+	color: #1b262c;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
 a {
 	text-decoration: none;
+}
+
+a:hover {
+	color: white;
 }
 
 .one-col-container {
@@ -66,10 +76,19 @@ ul.menu-items li a:hover {
 }
 
 img.menu-icon {
+	width: 35px;
+	height: 35px;
 	display: none;
-	margin-top: 20px;
+	margin-top: auto;
+	margin-bottom: auto;	
 	margin-right: 10px;
 }
+
+img[src *="close"] {
+	height: 60px;
+	width: 40px;
+}
+
 
 div.one-col-container:nth-child(2) {
 	background: #EAF6F6;
@@ -114,26 +133,28 @@ div.one-col-container:nth-child(2) {
 a.button {
 	display: inline-block;
 	font-size: 2.0rem;
-	background: linear-gradient(to right, #66BFBF, #81caca);
+	background: linear-gradient(to right, #66BFBF, #93d2d2);
 	color: #FCFEFE;
 	padding: 5px;
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border: 3px solid transparent;
-	transition: background-color 0.7s ease-in-out;
+	transition: background 0.7s ease-in-out;
 }
 
 a.button:hover {
-	background-color: rgba(0, 0 ,255, 0.3);
+	background: black;
 }
 
 .row {
-	margin: 4px;
+	margin: 0 4px;
 	max-width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 }
+
+
 
 .two-col-container {
 	width: 100%;
@@ -143,16 +164,17 @@ a.button:hover {
 }
 
 .description {
-	font-family: Georgia, serif;
-	padding: 10px;
+	border: 2px solid #66BFBF;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: Georgia, serif;
+	flex: 1;
+	margin-bottom: 30px;
+	margin-right: 15px;
+	max-width: 50%;	
+	padding: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border: 2px solid #66BFBF;
-	margin-bottom: 5px;
-	margin-right: 5px;
-	max-width: 50%;
-	flex: 1;	
 }
 
 .description h2 {
@@ -160,8 +182,8 @@ a.button:hover {
 }
 
 .description h2:after {
-	display: block;
 	content: "";
+	display: block;
 	border-bottom: 3px dotted #ff3333;
 	width: 10%;
 }
@@ -211,15 +233,20 @@ a.button:hover {
 	transition: color 1s ease-in-out;
 }
 
-.text-description:hover {
+.text-description:hover h3,
+.text-description:hover p {
 	color: white;
-	font-weight: 800;
 }
 
 .text-description h3,
 .text-description p {
-	margin:4px 0; 
+	margin:4px 0;
+	color: transparent;
 } 
+
+.text-description h3 {
+	font-weight: 800;
+}
 
 .contact-text {
 	align-self: flex-start;
@@ -240,11 +267,11 @@ a.button:hover {
 
 form {
 	flex-basis: 50%;
-	margin-top: 15px;
 	min-width: 50%;
 	padding: 10px;
 	align-self: center;
 	background: #66BFBF;
+	margin: 15px auto 0 auto;
 }
 
 form h3 {
@@ -279,15 +306,14 @@ input[type = submit] {
 
 .address {
 	padding: 5px;
-	margin-top: 1px;
 	background-color: #e6f0ff;
 	width: 100%;
 	text-align: center;
 }
 
 footer {
-	font-size: 1.5rem;
 	background: #66BFBF;
+	padding: 10px;
 }
 
 .col-center {
@@ -298,16 +324,16 @@ footer {
 
 span.love {
 	color: red;
-	font-size: 1.6rem;
 }
 
 .col-center p {
+	color: #e6f0ff;
+	font-size: 1.0rem;
 	margin-bottom: 0;
 	align-self: center;
 }
 
 /* media query for menu */
-
 @media screen and (max-width: 900px) {
 	ul.menu-items {
 		text-align: right;
@@ -318,7 +344,7 @@ span.love {
 		left: 0;
 		width: 100%;
 		overflow: hidden;
-		transition: max-height 0.5s ease-in-out;
+		transition: max-height 1.0s ease-in-out;
 	}
 	
 	ul.menu-items li {
@@ -343,7 +369,6 @@ span.love {
 	
 	img.menu-icon {
 		display: block;
-		height: 50px;
 		cursor: pointer;
 	}
 }
@@ -364,7 +389,7 @@ span.love {
 	}
 	
 	.welcome-text {
-		text-align: center;
+		text-align: left;
 	}
 	
 	.row {
